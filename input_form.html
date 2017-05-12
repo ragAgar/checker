@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>SNS投稿チェッカー</title>
+    <link rel="stylesheet" href="./css/style_input.css"> 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>  
+    <link href="./css/data_text_css.css" rel="stylesheet" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> 
+     <style type="text/css">
+ <!--
+        .login {letter-spacing: 2px;}
+         a   { text-decoration:none;}
+ -->
+ </style>   
+    <script>
+        $('#fa-picture').click(function(){
+            $('#img_upload_image').css('color', '#fff');
+        });
+    </script>         
+</head>
+<body>
+    <div class="back"></div> 
+    <div class="input">
+       <h1>
+           分析したい投稿を入力してください。
+       </h1>    
+                <div class="sns_icons">
+                    <a class="btn twitter-btn" href="./index.html">
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="btn instagram-btn" href="./index.html">
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    </a>
+
+
+                    <a class="btn facebook-btn" href="./index.html">
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>                      
+                    </a> 
+                    
+                    <div class="from-sankaku">
+                        
+                        
+                    </div>
+        <textarea class="form" id="form" rows="10" cols="14" placeholder="いまなにしてる？"></textarea>
+
+        <!--<ul class="uploads">
+           <li>-->
+           <div id="img_uploading">
+            <form action="POST">
+              <div id="img_upload">
+                <i class="fa fa-picture-o fa-2x" aria-hidden="true" id="img_upload">
+                <input type="file" id="img_upload_form">
+                </i>
+              </div>
+            </form>  
+            </div>
+           <!--</li> 
+           <li>     -->              
+            <form>
+               <div id="location_upload">
+                <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                </div>
+            </form>
+           <!--</li>            
+        </ul>-->  
+            <form>
+               <div id="hash_upload">
+                <i class="fa fa-hashtag fa-2x" aria-hidden="true"></i>
+                </div>
+            </form>        
+        <a class="check-btn" id = "check-btn" href="./loading.html">
+         <p><i class="fa fa-signal fa-2x" aria-hidden="true"> Check</i></p>
+        </a>
+        </div>    
+  
+    </div>
+       
+</body>
+</html>

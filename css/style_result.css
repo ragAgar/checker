@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+	font-family: 'FlopDesignFONT';
+	src: url('./font/FlopDesignFONT.woff') format('woff');
+}
+
+body{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;    
+    background: -moz-radial-gradient(center, ellipse cover, rgba(26,188,156,0.42) 0%, rgba(26,188,156,0.79) 64%, rgba(26,188,156,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(26,188,156,0.42) 0%,rgba(26,188,156,0.79) 64%,rgba(26,188,156,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(26,188,156,0.42) 0%,rgba(26,188,156,0.79) 64%,rgba(26,188,156,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b1abc9c', endColorstr='#1abc9c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+h1{
+    margin-top: 40px;
+    font-family: 'FlopDesignFONT';    
+    margin-top: 40px;
+    font-size: 400%;
+}
+
+h2{
+    font-family: 'FlopDesignFONT';       
+    margin-top: 4%;
+    position: relative;    
+    z-index: 9;    
+    font-size: 200%;
+}
+
+.from_backend h2{
+    position: relative;
+    margin-top: -23%;    
+    font-family: 'FlopDesignFONT';         
+    top: 280%;  
+}
+
+/*結果*/
+h3{  
+    font-family: 'FlopDesignFONT';         
+    z-index: 10;
+    margin-top: 3%;
+    font-size: 1200%;
+    text-shadow: 4px 3px 0px #0e8c73;    
+} 
+
+
+.from_backend{
+    height: 100px;
+    
+}
+
+.facebook-like{
+    z-index: 4;   
+    margin-top: -40px;
+    width: 20%;    
+}
+
+.result{
+    padding-top: 30px; 
+    text-align: center;   
+    overflow: hidden;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #fff;
+    border: 6px solid;  
+    height: 750px;
+}
+
+/*もう一度*/
+
+.fa-refresh {
+	display: block;
+    top: 80%;
+	width: 20%;
+	height: 50px;
+	box-shadow: 0 2px 0 #0e8c73;    
+
+	outline: none;
+    padding:10px;
+    margin-top: 23%;    
+	background-color: #1abc9c;
+	border-radius: 5px;
+	color: #fff;
+    font-size: 33px;
+	text-decoration: none;   
+	text-align: center;    
+	line-height: 52px;
+   
+}
+.fa-refresh:hover {
+	background-color: #31c8aa;
+	box-shadow: 0 4px 0 #0e8c73;
+}
+.fa-refresh:active {
+	top: 3px;
+	box-shadow: none;
+}
+
+.fa-refresh{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.check-btn{
+    text-align: center;    
+    margin: 0 auto;
+}
