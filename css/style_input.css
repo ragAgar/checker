@@ -5,7 +5,7 @@
 
 @font-face {
 	font-family: 'FlopDesignFONT';
-	src: url('./font/FlopDesignFONT.woff') format('woff');
+	src: url('./font/03SmartFontUI.woff') format('woff');
 }
 
 body{
@@ -29,7 +29,7 @@ body{
     padding-left: 3%;
     letter-spacing: -2px;
     font-family: "FlopDesignFONT";   
-    margin-top: 3%;
+    margin-top: 4%;
     font-size: 330%;
 }
 
@@ -37,19 +37,19 @@ body{
 
 .btn{
     margin: 5px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 20px;    
     display: inline-block;
-    width: 250px;
+    width: 23%;
     height: 60px;
     box-shadow: 0 1px 1px 0 rgba(128,128,128,0.1), 0 1px 1px 0 ;
+    opacity: 0.2;
 }
 
 .btn:hover {
     opacity: 0.85;
     box-shadow: 0 3px 3px 0 rgba(128,128,128,0.1), 0 3px 3px 0;  
 }
-
 
 /*ボタン*/
 .twitter-btn{
@@ -67,7 +67,8 @@ body{
 }
 
 .facebook-btn{  
-    background-color:#3B5998;
+    background-color: #3B5998;
+    opacity: 1;    
 }
 
 .fa-twitter, .fa-instagram, .fa-facebook{ 
@@ -89,12 +90,12 @@ p{
 .form {
     position: relative;
     font-family: "FlopDesignFONT";       
-    margin-top: 3%;    
     display: block;
     height: 1%;
     padding: 1%;
     padding-top: 2.4%;
     padding-left: 3%;    
+    padding-right: 3%;        
     font-size: 25px;
     color: #020202;
     margin: 0 auto; 
@@ -107,31 +108,18 @@ p{
     border: 4px solid;
 }
 
-.from-sankaku {
-    content: ' ';
-    height: 0;
-    position: absolute;
-    width: 0;
-    border: 30px solid transparent;
-    border-bottom-color: #333;
-    top: 25%;
-    right: 29.5%; 
-}   
-.from-sankaku:after {
-    background-color:#fff;
-}   
 
 
 /*checkボタン*/
-.fa-signal {
+.fa-signal {   
     margin-bottom: 2%;    
 	display: inline-block;
-	width: 20%;
+	width: 21%;
 	height: 50px;
 	box-shadow: 0 3px 0 #0e8c73;    
 	outline: none;
     padding:10px;
-    margin-top: 1.5%;
+    margin-top: 2%;
 	background-color: #1abc9c;
 	border-radius: 4px;
 	color: #fff;
@@ -156,13 +144,13 @@ p{
     padding-top:30px;
 }
 
-.check-btn{
+.check-btn{ 
     text-align: center;    
-    margin: 0 auto;    
+    margin: 0 auto;  
 }
 
-.check-btn p{
-     font-family: "FlopDesignFONT";   
+.check{
+    font-family: "FlopDesignFONT";   
 }
 
 /*アップロード系統*/
@@ -228,4 +216,210 @@ p{
   margin-top: -7.1%;
   margin-left: -50%;   
 */    
+}
+
+
+.tab-page {    
+    /* 最初は全部非表示 */
+    display: none;
+}
+
+.tab1 {
+    display: block;
+}
+
+
+@media screen and (max-width: 1137px) {
+    /*アップロード系統*/
+
+
+    #img_uploading{    
+        left: 20%;
+        top: 80%;
+    }
+
+    .input h1{
+        padding-left: 3%;
+        letter-spacing: -2px;
+        font-family: "FlopDesignFONT";   
+        margin-top: 4%;
+        font-size: 246%;
+    }    
+    
+    #img_upload {
+      position: relative;  
+    }
+
+    /*現在位置アップロード*/
+    #location_upload {
+        top: 80%;     
+    }
+
+    #hash_upload {
+        top: 80%;
+    }    
+    
+}
+@media screen and (max-width: 903px) {
+    #img_uploading{    
+        left: 19%;
+        top: 78%;
+    }
+
+    .input h1{
+        padding-left: 3%;
+        letter-spacing: -2px;
+        font-family: "FlopDesignFONT";   
+        margin-top: 4%;
+        font-size: 230%;
+    }    
+    
+    #img_upload {
+      position: relative;  
+    }
+
+    /*現在位置アップロード*/
+    #location_upload {
+        left: 29%;        
+        top: 78%;     
+    }
+
+    #hash_upload {
+        left: 32.5%;         
+        top: 78%;
+    }       
+}
+@media screen and (max-width: 754px) {
+    #img_uploading{    
+        left: 18%;
+        top: 77%;
+    }
+
+    .input h1{
+        padding-left: 3%;
+        letter-spacing: -2px;
+        font-family: "FlopDesignFONT";   
+        margin-top: 4%;
+        font-size: 220%;
+    }    
+    
+    #img_upload {
+      position: relative;  
+    }
+
+    /*現在位置アップロード*/
+    #location_upload {
+        left: 32%;        
+        top: 77%;     
+    }
+
+    #hash_upload {
+        left: 37.5%;         
+        top: 77%;
+    } 
+    .fa-signal {   
+        width: 28%;
+    }  
+    
+    .check{
+        font-size: 80%; 
+    }
+    }
+@media screen and (max-width: 480px) {
+    #img_uploading{    
+        left: 15%;
+        top: 59.5%;
+    }
+
+    .input h1{
+        padding-left: 3%;
+        letter-spacing: -2px;
+        font-family: "FlopDesignFONT";   
+        margin-top: 4%;
+        font-size: 220%;
+    }    
+    
+    #img_upload {
+      position: relative;  
+    }
+
+    /*現在位置アップロード*/
+    #location_upload {
+        left: 34.5%;        
+        top: 59.5%;     
+    }
+
+    #hash_upload {
+        left: 41.5%;         
+        top: 59.5%;
+    } 
+    .fa-signal {   
+        width: 28%;
+    }  
+    
+    .check{
+        font-size: 80%; 
+    } 
+    
+    /*checkボタン*/
+    .fa-signal {   
+        margin-bottom: 10%;    
+        display: inline-block;
+        width: 40%;
+        height: 50px;
+        box-shadow: 0 3px 0 #0e8c73;    
+        outline: none;
+        padding: 14px;
+        padding: 10px;
+        margin-top: 10%;
+        background-color: #1abc9c;
+        border-radius: 4px;
+        color: #fff;
+
+        font-size: 33px;
+        text-align: center;
+        text-decoration: none;    
+        line-height: 52px;
+
+    }   
+
+    /*フォーム*/
+    .form {
+        position: relative;
+        font-family: "FlopDesignFONT";       
+        display: block;
+        height: 1%;
+        padding: 1%;
+        padding-top: 2.4%;
+        padding-left: 3%;    
+        padding-right: 3%;        
+        font-size: 25px;
+        color: #020202;
+        margin: 0 auto; 
+        margin-top: 1%;
+        height: 250px;    
+        width: 70%;
+
+        background-color: #ffffff;
+        border-radius: 20px;
+        border: 3px solid;
+    }    
+    body{
+        margin-top: 15%;        
+    }
+    .input{
+        text-align: center;   
+        margin: 0 auto;
+        width: 80%;
+        background-color: #fff;
+        border: 5px solid;    
+    }
+    .tab-page {    
+        /* 最初は全部非表示 */
+        display: none;
+    }
+
+    .tab1 {
+        display: block;
+    }    
 }

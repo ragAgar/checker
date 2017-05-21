@@ -69,3 +69,73 @@ h1{
     -webkit-transform: scaleY(1.0);
   }
 }
+
+
+@media screen and (max-width: 1170px) {
+    h1{   
+        margin-top: 20%;
+        text-align: center;
+        font-family: 'FlopDesignFONT';    
+        color: #fff;
+        font-size: 80px;
+    }
+    .spinner > div {
+      background-color: #fff;
+      height: 250%;
+      width: 25px;
+      display: inline-block;
+
+      -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+      animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    }    
+}
+
+@media screen and (max-width: 880px) {
+    h1{   
+        margin-top: 10%;
+        text-align: center;
+        font-family: 'FlopDesignFONT';    
+        color: #fff;
+        font-size: 60px;
+    }
+    .spinner > div {
+      background-color: #fff;
+      height: 200%;
+      width: 20px;
+      display: inline-block;
+
+      -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+      animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1{   
+        margin-top: 30%;
+        text-align: center;
+        font-family: 'FlopDesignFONT';    
+        color: #fff;
+        font-size: 50px;
+    }  
+    
+    .spinner {
+      margin: 100px auto;
+      margin-top: 200px;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      font-size: 10px;
+    }    
+    
+    .spinner > div {
+      background-color: #fff;
+      height: 200%;
+      width: 20px;
+      display: inline-block;
+
+      -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+      animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    }    
+}
+
+

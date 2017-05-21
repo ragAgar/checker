@@ -1,86 +1,98 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
-    <title>SNS投稿チェッカー</title>
-    <link rel="stylesheet" href="./css/style.css">  
-    <link rel="stylesheet" href="./css/lightbox.css">  
+    <title>いいね!リーダー</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/lightbox.css">
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./js/lightbox-plus-jquery.min.js"></script>
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />  
-     <style type="text/css">
- <!--
-        .h1 {letter-spacing: 2px;}
-         a   { text-decoration:none;}
- -->
- </style>   
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <style type="text/css">
+        <!-- .h1 {
+            letter-spacing: 2px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        -->
+    </style>
 </head>
 
 <body>
     <div class="login">
-        <h1>SNS投稿スカウター</h1>
+        <h1>SNS投稿リーダー</h1>
         <h2>SNSアカウントでログイン</h2>
         <div class="sns_icons">
-                    <a class="btn twitter-btn ripple" href="#twitter-login">
-                        <i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
-                        <p>Twitter</p>
-                    </a>
+            <a class="btn twitter-btn ripple">
+                <i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
+                <p>Twitter</p>
+            </a>
 
-                    <a class="btn instagram-btn ripple" href="#twitter-login">
-                        <i class="fa fa-instagram fa-5x" aria-hidden="true"></i>
-                        <p>Instagram</p>                        
-                    </a>
+            <a class="btn instagram-btn ripple">
+                <i class="fa fa-instagram fa-5x" aria-hidden="true"></i>
+                <p>Instagram</p>
+            </a>
 
 
-                    <a class="btn facebook-btn ripple" href="./input_form.html">
-                        <i class="fa fa-facebook fa-5x" aria-hidden="true"></i>
-                        <p>Facebook</p>                        
-                    </a>
+            <a class="btn facebook-btn ripple" href="./input_form.html">
+                <i class="fa fa-facebook fa-5x" aria-hidden="true"></i>
+                <p>Facebook</p>
+            </a>
 
-                    <script>
-                            $('.btn').on('click', function() {
-                              var ripple, ripples, RippleEffect,loc, cover, coversize, style, x, y, i, num;
+            <script>
+                $('.btn').on('click', function() {
+                    var ripple, ripples, RippleEffect, loc, cover, coversize, style, x, y, i, num;
 
-                              //クラス名rippleの要素を取得
-                              ripples = document.querySelectorAll('.ripple');
+                    //クラス名rippleの要素を取得
+                    ripples = document.querySelectorAll('.ripple');
 
-                              //位置を取得
-                              RippleEffect = function(e) {
-                              ripple = this;//クリックされたボタンを取得
-                                cover = document.createElement('span');//span作る
-                                coversize = ripple.offsetWidth;//要素の幅を取得
-                              loc = ripple.getBoundingClientRect();//絶対座標の取得
-                              x = e.pageX - loc.left - window.pageXOffset - (coversize / 2);
-                              y = e.pageY - loc.top - window.pageYOffset - (coversize / 2);
-                              pos = 'top:' + y + 'px; left:' + x + 'px; height:' + coversize + 'px; width:' + coversize + 'px;';
+                    //位置を取得
+                    RippleEffect = function(e) {
+                        ripple = this; //クリックされたボタンを取得
+                        cover = document.createElement('span'); //span作る
+                        coversize = ripple.offsetWidth; //要素の幅を取得
+                        loc = ripple.getBoundingClientRect(); //絶対座標の取得
+                        x = e.pageX - loc.left - window.pageXOffset - (coversize / 2);
+                        y = e.pageY - loc.top - window.pageYOffset - (coversize / 2);
+                        pos = 'top:' + y + 'px; left:' + x + 'px; height:' + coversize + 'px; width:' + coversize + 'px;';
 
-                              //spanを追加
-                              ripple.appendChild(cover);
-                              cover.setAttribute('style', pos);
-                              cover.setAttribute('class', 'rp-effect');//クラス名追加
+                        //spanを追加
+                        ripple.appendChild(cover);
+                        cover.setAttribute('style', pos);
+                        cover.setAttribute('class', 'rp-effect'); //クラス名追加
 
-                              //しばらくしたらspanを削除
-                              setTimeout(function() {
-                                var list = document.getElementsByClassName( "rp-effect" ) ;
-                                for(var i =list.length-1;i>=0; i--){//末尾から順にすべて削除
-                                    list[i].parentNode.removeChild(list[i]);
-                              }}, 2000)};
-                              for (i = 0, num = ripples.length; i < num; i++) {
-                                ripple = ripples[i];
-                                ripple.addEventListener('mousedown', RippleEffect);
-                              }
-                    }());
-                    </script>                
+                        //しばらくしたらspanを削除
+                        setTimeout(function() {
+                            var list = document.getElementsByClassName("rp-effect");
+                            for (var i = list.length - 1; i >= 0; i--) { //末尾から順にすべて削除
+                                list[i].parentNode.removeChild(list[i]);
+                            }
+                        }, 2000)
+                    };
+                    for (i = 0, num = ripples.length; i < num; i++) {
+                        ripple = ripples[i];
+                        ripple.addEventListener('mousedown', RippleEffect);
+                    }
+                }());
+            </script>
         </div>
         <div class="lightbox">
-            <a href="./img/lightbox1.png" rel="lightbox" data-lightbox="group">
-                <h3><i class="fa fa-info-circle" aria-hidden="true"></i> SNS投稿スカウターって??</h3>
-                
+            <a href="./img/lightboxes1.png" rel="lightbox" data-lightbox="group">
+                <h3><i class="fa fa-info-circle" aria-hidden="true"></i> SNS投稿リーダーって??</h3>
+
             </a>
-            <a href="./img/lightbox2.png" data-lightbox="group"></a>
+            <a href="./img/lightboxes2.png" data-lightbox="group">
+            </a>
+            <a href="./img/lightboxes3.png" data-lightbox="group">
+            </a>
         </div>
-  
+
     </div>
 </body>
+
 </html>

@@ -1,82 +1,84 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
-    <title>SNS投稿チェッカー</title>
-    <link rel="stylesheet" href="./css/style_input.css"> 
+    <title>いいね!リーダー</title>
+    <link rel="stylesheet" href="./css/style_input.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./js/jquery-3.2.1.min.js"></script>  
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/tab.js"></script>
     <link href="./css/data_text_css.css" rel="stylesheet" />
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> 
-     <style type="text/css">
- <!--
-        .login {letter-spacing: 2px;}
-         a   { text-decoration:none;}
- -->
- </style>   
-    <script>
-        $('#fa-picture').click(function(){
-            $('#img_upload_image').css('color', '#fff');
-        });
-    </script>         
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <style type="text/css">
+        <!-- a {
+            text-decoration: none;
+        }
+        
+        -->
+    </style>
 </head>
+
 <body>
-    <div class="back"></div> 
+    <div class="back"></div>
     <div class="input">
-       <h1>
-           分析したい投稿を入力してください。
-       </h1>    
-                <div class="sns_icons">
-                    <a class="btn twitter-btn" href="./index.html">
-                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-                    </a>
+        <h1>
+            分析したい投稿を入力してください。
+        </h1>
+        <div class="sns_icons">
+            <a class="btn twitter-btn btn1" href="#" data-page="1">
+                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            </a>
 
-                    <a class="btn instagram-btn" href="./index.html">
-                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                    </a>
+            <a class="btn instagram-btn btn2" href="#" data-page="2">
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            </a>
+
+            <a class="btn facebook-btn btn3" href="#" data-page="3">
+                <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+            </a>
+
+            <div class="from-sankaku">
 
 
-                    <a class="btn facebook-btn" href="./index.html">
-                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>                      
-                    </a> 
-                    
-                    <div class="from-sankaku">
-                        
-                        
-                    </div>
-        <textarea class="form" id="form" rows="10" cols="14" placeholder="いまなにしてる？"></textarea>
+            </div>
 
-        <!--<ul class="uploads">
+            <textarea class="form tab-page tab1" id="form" rows="10" cols="14" placeholder="いまなにしてる？"></textarea>
+            <textarea class="form tab-page tab2" id="form" rows="10" cols="14" placeholder="キャプションを入力..."></textarea>
+            <textarea class="form tab-page tab3" id="form" rows="10" cols="14" placeholder="今なにしてる?"></textarea>
+
+            <!--<ul class="uploads">
            <li>-->
-           <div id="img_uploading">
-            <form action="POST">
-              <div id="img_upload">
-                <i class="fa fa-picture-o fa-2x" aria-hidden="true" id="img_upload">
+            <div id="img_uploading">
+                <form action="POST">
+                    <div id="img_upload">
+                        <i class="fa fa-picture-o fa-2x" aria-hidden="true" id="img_upload">
                 <input type="file" id="img_upload_form">
                 </i>
-              </div>
-            </form>  
+                    </div>
+                </form>
             </div>
-           <!--</li> 
-           <li>     -->              
+            <!--</li> 
+           <li>     -->
             <form>
-               <div id="location_upload">
-                <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                <div id="location_upload">
+                    <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
                 </div>
             </form>
-           <!--</li>            
-        </ul>-->  
+            <!--</li>            
+        </ul>-->
             <form>
-               <div id="hash_upload">
-                <i class="fa fa-hashtag fa-2x" aria-hidden="true"></i>
+                <div id="hash_upload">
+                    <i class="fa fa-hashtag fa-2x tab3" aria-hidden="true"></i>
                 </div>
-            </form>        
-        <a class="check-btn" id = "check-btn" href="./loading.html">
-         <p><i class="fa fa-signal fa-2x" aria-hidden="true"> Check</i></p>
-        </a>
-        </div>    
-  
+            </form>
+            <a class="check-btn" id="check-btn" href="./loading.html">
+                <i class="fa fa-signal fa-2x" aria-hidden="true"><span class="check"> Check</span></i>
+            </a>
+        </div>
+
     </div>
-       
+
 </body>
+
 </html>

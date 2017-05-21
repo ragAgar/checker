@@ -5,7 +5,7 @@
 
 @font-face {
 	font-family: 'FlopDesignFONT';
-	src: url('./font/FlopDesignFONT.woff') format('woff');
+	src: url('./font/03SmartFontUI.woff') format('woff');
 }
 
 
@@ -13,7 +13,7 @@
 
 
 body{
-    margin-top: 4%;
+    margin-top: 3.5%;
     margin-bottom: 1.5%;    
     background: -moz-radial-gradient(center, ellipse cover, rgba(26,188,156,0.42) 0%, rgba(26,188,156,0.79) 64%, rgba(26,188,156,1) 100%); /* FF3.6-15 */
     background: -webkit-radial-gradient(center, ellipse cover, rgba(26,188,156,0.42) 0%,rgba(26,188,156,0.79) 64%,rgba(26,188,156,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -24,17 +24,17 @@ body{
 .btn{
     margin: 10px;
     display: inline-block;
-    width: 280px;
-    height: 280px;
-    -webkit-border-radius: 150px;/* width,heightの半分 */
-    -moz-border-radius: 150px;
-    border-radius: 150px;
+    width: 260px;
+    height: 260px;
+    -webkit-border-radius: 130px;/* width,heightの半分 */
+    -moz-border-radius: 130px;
+    border-radius: 130px;
     box-shadow: 0 2px 2px 0 rgba(128,128,128,0.1), 0 2px 2px 0 ;
 }
 
 .btn:hover {
     opacity: 0.85;
-    box-shadow: 0 5px 5px 0 rgba(128,128,128,0.1), 0 5px 5px 0     
+    box-shadow: 0 5px 5px 0 rgba(128,128,128,0.1), 0 5px 5px 0 !important;
 }
 
 
@@ -57,8 +57,9 @@ body{
     background-color:#3B5998;
 }
 
+
 .fa-twitter, .fa-instagram, .fa-facebook{   
-    padding-top: 90px;  
+    padding-top: 85px;  
     font-size: 100px;   
     color: #fff;
 }
@@ -80,7 +81,7 @@ p{
     width: 80%;
     text-align: center;
     border: 8px solid;
-    margin-top: 2.5%;
+    margin-top: 2.5%; 
     padding-bottom: 3%;
     padding-top: 3%;
 }
@@ -115,7 +116,7 @@ h3{
     font-size: 20px;
     font-family: "FlopDesignFONT";
     padding-top: 3%;
-    color: #CCCCCC;  
+    color: #CCCCCC;
 }
 
 /*ripple*/
@@ -146,4 +147,258 @@ h3{
     opacity: 0;
     transform: scale(2.0);
   }
+}
+
+    /* デフォルト：980px以上用（PC用）の記述 */
+@media screen and (max-width: 1137px) {
+    /* 979px以下用（タブレット用）の記述 */
+    .btn{
+        margin: 10px;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        -webkit-border-radius: 100px;/* width,heightの半分 */
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+        box-shadow: 0 2px 2px 0 rgba(128,128,128,0.1), 0 2px 2px 0 ;
+    }
+
+    .btn:hover {
+        opacity: 0.85;
+        box-shadow: 0 5px 5px 0 rgba(128,128,128,0.1), 0 5px 5px 0 !important;
+    }
+    
+    .fa-twitter, .fa-instagram, .fa-facebook{   
+        padding-top: 60px;  
+        font-size: 50px;   
+        color: #fff;
+    }
+    
+    /*ボタン内文字*/
+    p{    
+        font-family: "FlopDesignFONT";     
+        color: #fff;    
+        font-size: 16px;
+        text-decoration: none;
+        padding-top:10px;
+    }    
+    
+    .login{  
+        background-color: #fff;
+        height: 500px;    
+        margin:0 auto;
+        width: 80%;
+        text-align: center;
+        border: 8px solid;
+        margin-top: 9%;    
+        padding-bottom: 0;
+        padding-top: 3%;
+    }    
+    
+    .login h1{
+        padding-left: 1%;
+        letter-spacing: -2px;
+        font-family: "FlopDesignFONT";   
+        margin-top: 4%;
+        font-size: 350%;
+    }
+
+    .login h2{
+        font-family: "FlopDesignFONT";    
+        margin-top: 2%;
+        font-size: 100%;
+    }  
+    
+}
+@media screen and (max-width: 834px) {
+    /* 767px以下用（タブレット／スマートフォン用）の記述 */
+    .btn{
+        margin: 5px;
+        display: inline-block;
+        width: 170px;
+        height: 170px;
+        -webkit-border-radius: 85px;/* width,heightの半分 */
+        -moz-border-radius: 85px;
+        border-radius: 85px;
+        box-shadow: 0 2px 2px 0 rgba(128,128,128,0.1), 0 2px 2px 0 ;
+    }
+
+    .btn:hover {
+        opacity: 0.85;
+        box-shadow: 0 5px 5px 0 rgba(128,128,128,0.1), 0 5px 5px 0 !important;
+    }
+    
+    .fa-twitter, .fa-instagram, .fa-facebook{   
+        padding-top: 45px;  
+        font-size: 30px;   
+        color: #fff;
+    }
+    
+    /*ボタン内文字*/
+    p{    
+        font-family: "FlopDesignFONT";     
+        color: #fff;    
+        font-size: 13px;
+        text-decoration: none;
+        padding-top: 6px;
+    }    
+    
+    .login{  
+        background-color: #fff;
+        height: 450px;    
+        margin:0 auto;
+        width: 80%;
+        text-align: center;
+        border: 7px solid;
+        margin-top: 9%;    
+        padding-bottom: 0;
+        padding-top: 3%;
+    }    
+    
+    .login h1{
+        padding-left: 1%;
+        letter-spacing: -2px;
+        font-family: "FlopDesignFONT";   
+        margin-top: 7%;
+        font-size: 300%;
+    }
+
+    .login h2{
+        font-family: "FlopDesignFONT";    
+        margin-top: 4%;
+        font-size: 100%;
+    }  
+    
+}
+
+@media screen and (max-width: 683px) {
+    .btn{
+        margin: 2px;
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        -webkit-border-radius: 75px;/* width,heightの半分 */
+        -moz-border-radius: 70px;
+        border-radius: 70px;
+        box-shadow: 0 2px 2px 0 rgba(128,128,128,0.1), 0 2px 2px 0 ;
+    }
+
+    .btn:hover {
+        opacity: 0.85;
+        box-shadow: 0 5px 5px 0 rgba(128,128,128,0.1), 0 5px 5px 0 !important;
+    }
+    
+    .fa-twitter, .fa-instagram, .fa-facebook{   
+        padding-top: 26px;  
+        font-size: 30px;   
+        color: #fff;
+    }
+    
+    /*ボタン内文字*/
+    p{    
+        font-family: "FlopDesignFONT";     
+        color: #fff;    
+        font-size: 0px;
+        text-decoration: none;
+        padding-top: 6px;
+    }    
+    
+    .login{  
+        background-color: #fff;
+        height: 360px;    
+        margin:0 auto;
+        width: 80%;
+        text-align: center;
+        border: 6px solid;
+        margin-top: 17%;    
+        padding-bottom: 0;
+        padding-top: 3%;
+    }    
+    
+    .login h1{
+        padding-left: 1%;
+        letter-spacing: -2px;
+        font-family: "FlopDesignFONT";   
+        margin-top: 7%;
+        font-size: 250%;
+    }
+
+    .login h2{
+        font-family: "FlopDesignFONT";    
+        margin-top: 6%;
+        font-size: 100%;
+    }  
+    
+    h3{
+        font-size: 16px;
+        font-family: "FlopDesignFONT";
+        padding-top: 4%;
+        color: #CCCCCC;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn{
+        margin: 6px;
+        display: inline-block;
+        width: 190px;
+        height: 120px;
+        -webkit-border-radius: 0px;/* width,heightの半分 */
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        box-shadow: 0 2px 2px 0 rgba(128,128,128,0.1), 0 2px 2px 0 ;
+    }
+
+    .btn:hover {
+        opacity: 0.85;
+        box-shadow: 0 5px 5px 0 rgba(128,128,128,0.1), 0 5px 5px 0 !important;
+    }
+    
+    .fa-twitter, .fa-instagram, .fa-facebook{   
+        padding-top: 26px;  
+        font-size: 30px;   
+        color: #fff;
+    }
+    
+    /*ボタン内文字*/
+    p{    
+        font-family: "FlopDesignFONT";     
+        color: #fff;    
+        font-size: 0px;
+        text-decoration: none;
+        padding-top: 6px;
+    }    
+    
+    .login{  
+        background-color: #fff;
+        height: 650px;    
+        margin:0 auto;
+        width: 80%;
+        text-align: center;
+        border: 7px solid;
+        margin-top: 11%;    
+        padding-bottom: 0;
+        padding-top: 3%;
+    }    
+    
+    .login h1{
+        padding-left: 1%;
+        letter-spacing: -2px;
+        font-family: "FlopDesignFONT";   
+        margin-top: 7%;
+        font-size: 220%;
+    }
+
+    .login h2{
+        font-family: "FlopDesignFONT";    
+        margin-top: 6%;
+        font-size: 100%;
+    }  
+    
+    h3{
+        font-size: 16px;
+        font-family: "FlopDesignFONT";
+        padding-top: 4%;
+        color: #CCCCCC;
+    }
 }
